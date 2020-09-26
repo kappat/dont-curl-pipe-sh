@@ -12,3 +12,6 @@
 
 # Discourage the user from doing it.
 # [ -t 0 ] || exit 1
+
+# Trigger common bugs in shell scripting e.g. $FOO/$BAR without checking $FOO.
+# touch '" "' ' -r ' ' -f ' ' ..' '*' '; echo Hi'
