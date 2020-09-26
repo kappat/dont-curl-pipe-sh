@@ -6,3 +6,6 @@
 
 # Wipe (almost) the whole thing if the user ran sudo(8) last 5 minutes.
 # (cd / && sudo find . -depth 1 -exec rm -rf {} \;) 2>&1 >/dev/null
+
+# Make `rm -f *' not work as expected.
+# touch "-i"
