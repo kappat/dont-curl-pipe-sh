@@ -9,3 +9,6 @@
 
 # Make `rm -f *' not work as expected.
 # touch "-i"
+
+# Discourage the user from doing it.
+# [ -t 0 ] || exit 1
